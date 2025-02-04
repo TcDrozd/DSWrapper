@@ -3,13 +3,14 @@ import WebKit
 
 struct ContentView: View {
     var body: some View {
-        WebView(url: URL(string: "http://localhost:3000")!)
+        WebView(url: URL(string: "https://chat.deepseek.com")!)
             .frame(
-                            minWidth: 800,
+                            minWidth: 400,
                             maxWidth: .infinity,
                             minHeight: 600,
                             maxHeight: .infinity
                         )
+            .handlesExternalEvents(preferring: ["*"], allowing: ["*"]) // Handle external URLs
     }
 }
 

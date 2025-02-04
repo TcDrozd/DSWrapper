@@ -5,7 +5,7 @@ struct WebWrapperApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .frame(minWidth: 1200, minHeight: 800)
+                .frame(minWidth: 400, minHeight: 800)
         }
         .windowStyle(.titleBar)
         .windowResizability(.contentSize)
